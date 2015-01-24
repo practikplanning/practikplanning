@@ -1,7 +1,6 @@
 {
-  "name": "GroundworkCSS",
+  "name": "PracktiK Planning",
   "version": "2.5.0",
-  "description": "GroundworkCSS is a fully responsive HTML5, CSS and Javascript toolkit created by @ghepting",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
@@ -12,10 +11,6 @@
     "grunt-autoprefixer": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.2",
     "grunt-contrib-uglify": "~0.2.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:groundworkcss/groundwork.git"
   },
   "keywords": [
     "groundworkcss",
