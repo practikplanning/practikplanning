@@ -4,10 +4,10 @@ gray = rgba(170,168,168,1)
 
 ::selection
 	background-color green
-	color darken(green, 30%)
+	color ligthen(green, 30%)
 *
 	font-family 'Roboto' !important
-	transition all 0.3s
+	transition all 0.2s
 body 
 	font-size 18px
 nav
@@ -21,26 +21,32 @@ nav
 		width 100%
 		margin 0 auto
 		text-align center
+		height 50px
 		li 
 			display inline-block
-			padding 10px
 			font-size 1.1rem
-			@media (min-width: 400px)
-				padding 10px 25px
+			padding-top: 13px;
 			a, a:visited
+				padding 10px
 				color black
+				@media (min-width: 400px)
+					padding 10px 25px 15px 25px
+					margin-top 10px
+				&:hover, &:active, &:focus
+					color green
+					border-bottom 3px solid green
+					text-decoration none
 header
 	width 100%
 	height 400px
 	margin-bottom 45px
 	padding-top 150px
-	background url('../img/bkg.jpeg') bottom
+	background url('../img/bkg.jpg') top
 	background-size cover
+	text-align center
 	@media (min-width: 400px)
 		height 75vh
 		padding-top 15%
-	@media (min-width: 600px)
-		text-align center
 	h1 
 		font-size 2.5rem
 		@media (min-width: 600px)
@@ -65,15 +71,17 @@ section
 		text-align center
 		padding 20px 0
 	&#intro 
-		background-image url('../img/bkg.jpeg')
-		background-position center
+		background-image url('../img/bkg.jpg')
+		background-position bottom
 		border-top 1px green solid
 		border-bottom 1px green solid
-		padding 35px 0
+		padding 65px 0
 		@media (min-width: 400px)
 			text-align center
 		p 
 			color white
+	&#services 
+		text-align center
 p 
 	font-weight lighter
 #plan-sketch
@@ -82,7 +90,7 @@ p
 	margin 10px auto 25px auto
 	display block
 	background-image url('../img/sketch.jpg')
-	background-size 80%
+	background-size contain
 	background-repeat no-repeat
 	background-position center
 h3 
@@ -91,10 +99,15 @@ h3
 	display inline
 	text-align center !important
 	text-transform uppercase
+	font-size 2.5rem
+	letter-spacing 4px
 	&.alex 
 		color darken(green, 20%) 
-		font-size 3rem
 		margin 0
+		letter-spacing 0px
+		@media (min-width: 700px)
+			font-size 3rem
+			margin-right 5px
 h4 
 	font-size 1.2rem
 	display inline-block
@@ -105,17 +118,22 @@ h4
 	margin 0
 	@media (min-width: 700px)
 		transform translateY(-9px)
+		margin-left 5px
 div.one.third 
 	text-align center
 h5 
-	margin 15px 0
+	margin 15px 0 20px 0
 	font-size 1rem
 	text-transform uppercase
 	letter-spacing 2px
 	color green
 footer 
-	padding 45px 0
+	padding 50px 0
 	background-color black
+	background-image url('../img/footer.png')
+	background-position bottom center
+	background-size 400px
+	background-repeat repeat-x
 	p
 		color darken(white, 50%)
 		text-align center
