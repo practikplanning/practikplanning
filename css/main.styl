@@ -1,6 +1,7 @@
 black = #222
 green = rgb(135,163,78)
 gray = rgba(170,168,168,1)
+dark-green = darken(green,20%)
 
 ::selection
 	background-color green
@@ -34,15 +35,15 @@ nav
 					margin-top 10px
 				&:hover, &:active, &:focus
 					color green
-					border-bottom 3px solid green
+					padding-bottom 11px
+					border-bottom 7px solid green
 					text-decoration none
+					transform translateY(-8px)
 a.button-round 
-	color white
 	display block
 	max-width 200px
 	padding 15px 20px
-	margin 50px auto
-	border 2px solid white
+	margin 35px auto 0 auto
 	border-radius 100px
 	text-transform uppercase
 	letter-spacing 4px
@@ -52,6 +53,15 @@ a.button-round
 		text-decoration none
 		background-color rgba(255,255,255,0.1)
 		transition all 0.3s
+	&.light 
+		color white
+		border 2px solid white
+	&.dark 
+		color dark-green !important
+		border 2px solid darken(green, 20%)
+		&:hover, &:focus, &:active 
+			background-color dark-green
+			color white !important
 header
 	width 100%
 	height 400px
@@ -63,6 +73,8 @@ header
 	@media (min-width: 400px)
 		height 75vh
 		padding-top 15%
+	&#small-head 
+		height 200px
 	h1 
 		font-size 2.5rem
 		@media (min-width: 600px)
@@ -82,7 +94,7 @@ header
 .row 
 	margin-top 35px
 section 
-	margin 45px auto
+	margin 20px auto 45px
 	&#name 
 		text-align center
 		padding 20px 0
@@ -103,7 +115,7 @@ p
 #plan-sketch
 	width 100%
 	height 30vh
-	margin 10px auto 25px auto
+	margin 10px auto 0px auto
 	display block
 	background-image url('../img/sketch.jpg')
 	background-size contain
@@ -118,7 +130,7 @@ h3
 	font-size 2.5rem
 	letter-spacing 4px
 	&.alex 
-		color darken(green, 20%) 
+		color dark-green
 		margin 0
 		letter-spacing 0px
 		@media (min-width: 700px)
