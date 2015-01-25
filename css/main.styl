@@ -36,11 +36,27 @@ nav
 					color green
 					border-bottom 3px solid green
 					text-decoration none
+a.button-round 
+	color white
+	display block
+	max-width 200px
+	padding 15px 20px
+	margin 50px auto
+	border 2px solid white
+	border-radius 100px
+	text-transform uppercase
+	letter-spacing 4px
+	font-size 1rem
+	transition all 0.2s
+	&:hover, &:focus, &:active
+		text-decoration none
+		background-color rgba(255,255,255,0.1)
+		transition all 0.3s
 header
 	width 100%
 	height 400px
 	margin-bottom 45px
-	padding-top 150px
+	padding-top 130px
 	background url('../img/bkg.jpg') top
 	background-size cover
 	text-align center
@@ -86,7 +102,7 @@ p
 	font-weight lighter
 #plan-sketch
 	width 100%
-	height 45vh
+	height 30vh
 	margin 10px auto 25px auto
 	display block
 	background-image url('../img/sketch.jpg')
