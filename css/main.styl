@@ -1,6 +1,10 @@
 black = #222
 green = rgb(135,163,78)
+gray = rgba(170,168,168,1)
 
+::selection
+	background-color green
+	color darken(green, 30%)
 *
 	font-family 'Roboto' !important
 	transition all 0.3s
@@ -12,6 +16,7 @@ nav
 	background-color white
 	border-bottom 1px solid gray
 	width 100%
+	z-index 1000
 	ul 
 		width 100%
 		margin 0 auto
@@ -20,21 +25,31 @@ nav
 			display inline-block
 			padding 10px
 			font-size 1.1rem
+			@media (min-width: 400px)
+				padding 10px 25px
 			a, a:visited
 				color black
 header
 	width 100%
-	height 75vh
+	height 400px
 	margin-bottom 45px
 	padding-top 150px
-	background-image url('../img/bkg.jpeg')
+	background url('../img/bkg.jpeg') bottom
 	background-size cover
-	background-position fixed
+	@media (min-width: 400px)
+		height 75vh
+		padding-top 15%
+	@media (min-width: 600px)
+		text-align center
 	h1 
 		font-size 2.5rem
+		@media (min-width: 600px)
+			font-size 5rem
 	h2 
 		font-size 1.5rem
 		text-transform uppercase
+		@media (min-width: 600px)
+			letter-spacing 7px
 	h1, h2
 		color white
 		font-weight lighter
@@ -42,12 +57,68 @@ header
 	margin 0 auto
 	width 80%
 	max-width 960px
+.row 
+	margin-top 35px
 section 
 	margin 45px auto
+	&#name 
+		text-align center
+		padding 20px 0
+	&#intro 
+		background-image url('../img/bkg.jpeg')
+		background-position center
+		border-top 1px green solid
+		border-bottom 1px green solid
+		padding 35px 0
+		@media (min-width: 400px)
+			text-align center
+		p 
+			color white
 p 
-	color black
-	
+	font-weight lighter
+#plan-sketch
+	width 100%
+	height 45vh
+	margin 10px auto 25px auto
+	display block
+	background-image url('../img/sketch.jpg')
+	background-size 80%
+	background-repeat no-repeat
+	background-position center
 h3 
 	color green 
 	font-weight lighter
-	
+	display inline
+	text-align center !important
+	text-transform uppercase
+	&.alex 
+		color darken(green, 20%) 
+		font-size 3rem
+		margin 0
+h4 
+	font-size 1.2rem
+	display inline-block
+	color gray
+	text-transform uppercase
+	font-weight lighter
+	letter-spacing 2px
+	margin 0
+	@media (min-width: 700px)
+		transform translateY(-9px)
+div.one.third 
+	text-align center
+h5 
+	margin 15px 0
+	font-size 1rem
+	text-transform uppercase
+	letter-spacing 2px
+	color green
+footer 
+	padding 45px 0
+	background-color black
+	p
+		color darken(white, 50%)
+		text-align center
+		text-transform uppercase
+		letter-spacing 5px
+		font-size 1rem
