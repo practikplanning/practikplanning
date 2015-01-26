@@ -82,7 +82,7 @@ a.button-round
 header
 	width 100%
 	height 400px
-	margin-bottom 45px
+	margin-bottom 0
 	padding-top 130px
 	background url('../img/bkg.jpg') top
 	background-size cover
@@ -90,6 +90,7 @@ header
 	@media (min-width: 600px)
 		height 85vh
 		padding-top 15%
+		margin-bottom 45px
 	&#small-head 
 		height 200px
 		padding-top 105px
@@ -109,8 +110,14 @@ header
 			display inline
 	h1 
 		font-size 2.5rem
+		text-transform uppercase
+		line-height 100%
 		@media (min-width: 600px)
-			font-size 5rem
+			font-size 4.2rem
+		span.big 
+			font-size 3rem
+			@media (min-width: 600px)
+				font-size 5.5rem
 	h2 
 		font-size 1.5rem
 		text-transform uppercase
@@ -175,7 +182,7 @@ section
 					font-size 1rem
 	&#name 
 		text-align center
-		padding 20px 0
+		padding 20px 0 35px 0
 	&#projects
 		text-align center
 		img 
