@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
         </head>
     <body>
     <nav>
@@ -44,21 +44,27 @@
                 <div class="one half">
                     <h3>Alex Norr</h3>
                     <p>Born in Utah</p>
-                    <p>Lives and works in Champaign, IL</p>
+                    <p>Lives <span class="plus">+</span> works in Champaign, IL</p>
                     <a href="mailto:alex@practikplanning.com">alex@practikplanning.com</a>
+                </div>
+                <div class="row half-pad-top double-pad-bottom">
+                    <a href="AlexNorr-Resume2014.pdf" class="button-round dark half-gap-top">Resume</a>
                 </div>
             </div>
             <div class="row resume">
                 <div class="one half padded-desktop border-bottom-mobile">
-                    <h4>Education</h4>
+                    <h4><i class="fa fa-graduation-cap"></i> Education</h4>
                     <p><span class="year">2013 - 2015</span> Master of Urban Planning <br> University of Illinois at Urbana-Champaign <br> Champaign, IL</p>
                     <p><span class="year">2009 - 2013</span> Bachelor of Science Geography: Urban and Environmental Planning <br> Brigham Young University <br> Provo, UT</p>
                 </div>
                 <div class="one half padded-desktop">
-                    <h4>Experience</h4>
-                    <p><span class="year">2014 - 2015</span> Intern, University of Illinois Extension, Community and Economic Development</p>
-                    <p><span class="year">2013 - 2014</span> Graduate teaching/research assistant, University of Illinois at Urbana-Champaign</p>
-                    <p><span class="year">2010 - 2013</span> Logistics & Inventory Specialist, efy Programs, Brigham Young University</p>
+                    <h4><i class="fa fa-briefcase"></i> Experience</h4>
+                    <h5>Intern</h5>
+                    <p><span class="year">2014 - 2015</span> University of Illinois Extension, Community and Economic Development</p>
+                    <h5>Graduate teaching research assistant</h5>
+                    <p><span class="year">2013 - 2014</span> University of Illinois at Urbana-Champaign</p>
+                    <h5>Logistics + Inventory Specialist</h5>
+                    <p><span class="year">2010 - 2013</span> efy Programs, Brigham Young University</p>
                 </div>
             </div>
         </div>
@@ -94,14 +100,14 @@
         <div class="contain">
             <div class="row resume">
                 <div class="one half padded-desktop border-bottom-mobile">
-                    <h4>Student activities</h4>
+                    <h4><i class="fa fa-group"></i> Student activities</h4>
                     <p>Rho Epsilon, VP, University of Illinois College of Business</p>
                     <p>Fighting Illini Triathlon Club</p>
                     <p>SUPA, President, Brigham Young University</p>
                     <p>Student College Council, Brigham Young University</p>
                 </div>
                 <div class="one half padded-desktop">
-                    <h4>Technical skills</h4>
+                    <h4><i class="fa fa-certificate"></i> Technical skills</h4>
                     <p>ArcMap GIS</p>
                     <p>Adobe CS</p>
                     <p>ARGUS Valuation & Asset Management</p>
@@ -115,27 +121,12 @@
     <footer>
         <div class="contain">
             <p>&copy; 2015 PractiK Urban Planning Solutions</p>
+            <a href="mailto:alex@practikplanning" class="noicon"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/pub/alex-norr/89/3a5/546" class="noicon"><i class="fa fa-linkedin"></i></a>
         </div>
     </footer>
 
     <script type="text/javascript" src="js/lib/groundwork.all.js"></script>
-    <script>
-$(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 80
-            }, 400);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
     </body>
 </html>
 
