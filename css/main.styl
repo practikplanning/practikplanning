@@ -5,8 +5,8 @@ dark-green = darken(green,20%)
 
 ::selection
 	background-color green
-	color lighten(green, 30%)
-*
+	color lighten(green, 40%)
+*:not(i)
 	font-family 'Roboto' !important
 	transition all 0.2s
 a 
@@ -125,23 +125,36 @@ section
 		h3 
 			margin-top 15px
 		.resume 
+			div.one.half 
+				@media (max-width: 400px)
+					margin-bottom 35px
+					padding-bottom 20px
 			p 
 				font-size 1.1rem
 			h4 
 				margin-bottom 15px
+			span.year 
+				font-weight bolder 
+				letter-spacing 1px 
+				display block
 		#skills 
+			margin-top 30px
 			padding 30px 0 45px 0
 			text-align center !important
 			background-color green
 			.row 
 				margin 0
+				@media (min-width: 400px)
+					margin 25px 0
 			h3 
 				color lighten(green, 40%)
 				font-size 1.5rem
 			h4
 				color white
 			i 
+				font-size 2rem
 				display block
+				margin 20px
 				color dark-green
 	&#name 
 		text-align center
