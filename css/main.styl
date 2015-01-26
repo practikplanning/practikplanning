@@ -9,12 +9,24 @@ dark-green = darken(green,20%)
 *
 	font-family 'Roboto' !important
 	transition all 0.2s
+a 
+	color green 
+	&#current-page
+		color green
+		padding-bottom 11px
+		border-bottom 7px solid green
+		text-decoration none
+		transform translateY(-8px)
+#alex-img 
+	border-radius 100%
+	@media (min-width: 600px)
+		float right
 body 
 	font-size 18px
 nav
 	position fixed
 	display block
-	background-color white
+	background-color rgba(255,255,255,0.9)
 	border-bottom 1px solid gray
 	width 100%
 	z-index 1000
@@ -75,6 +87,17 @@ header
 		padding-top 15%
 	&#small-head 
 		height 200px
+		padding-top 85px
+		text-align left
+		background-position bottom
+		@media (min-width: 400px)
+			height 230px
+			padding-top 95px
+		h1 
+			font-size 3.5rem
+			padding-bottom 0px 
+			border-bottom 2px solid white
+			display inline
 	h1 
 		font-size 2.5rem
 		@media (min-width: 600px)
@@ -95,6 +118,29 @@ header
 	margin-top 35px
 section 
 	margin 20px auto 45px
+	&#about 
+		text-align center
+		@media (min-width: 400px)
+			text-align left
+		h3 
+			margin-top 15px
+		.resume 
+			p 
+				font-size 1.1rem
+			h4 
+				margin-bottom 15px
+		#skills 
+			padding 30px 0 45px 0
+			text-align center !important
+			background-color green
+			h3 
+				color lighten(green, 40%)
+				font-size 1.5rem
+			h4
+				color white
+			i 
+				display block
+				color dark-green
 	&#name 
 		text-align center
 		padding 20px 0
@@ -124,11 +170,12 @@ p
 h3 
 	color green 
 	font-weight lighter
-	display inline
+	display inline-block
 	text-align center !important
 	text-transform uppercase
 	font-size 2.5rem
 	letter-spacing 4px
+	margin-bottom 15px
 	&.alex 
 		color dark-green
 		margin 0
@@ -144,9 +191,10 @@ h4
 	font-weight lighter
 	letter-spacing 2px
 	margin 0
-	@media (min-width: 700px)
-		transform translateY(-9px)
-		margin-left 5px
+	&.alex
+		@media (min-width: 700px)
+			transform translateY(-9px)
+			margin-left 5px
 div.one.third 
 	text-align center
 h5 
